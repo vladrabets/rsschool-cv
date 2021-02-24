@@ -1,1 +1,100 @@
-
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css"/>
+        <title>CV</title>
+    </head>
+    <body>
+        <div id="container">
+            <header class="header">
+                <h1 class="name">Vladislav Rabets</h1>
+                <div class="info">
+                    <img class="info-photo" src="img/myPhoto.jpg" alt="Vladislav Rabets Photo">
+                    <div class="info-contacts">
+                        <details>
+                            <summary class="summary"><b>Contact information</b></summary>
+                                <div class="summary-content">
+                                        <p><b>Phone:</b> +375(44)713-28-95<br></p>
+                                        <p><b>Email:</b> <span><a href="mailto:vladrabets.mmf@gmail.com">vladrabets.mmf@gmail.com</a></span><br></p>
+                                        <p><b>Discord:</b> vladrabets</p>
+                                </div>
+                        </details>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <section class="section">
+                    <h2 class="section-title">Summary</h2>
+                    <div class="section-content">
+                        <p class="section-text">
+                            My main goal is to become a Fullstack JavaScript Developer,<br>with the help of this course I can get closer to this. I am responsible, persistent and hardworking.
+                        </p>
+                    </div>
+                </section>
+                <section class="section">
+                    <h2 class="section-title">Skills</h2>
+                    <div class="section-content">
+                        <ul class="section-list">
+                            <li><b>Languages:</b> HTML, CSS, JS, SQL</li>
+                            <li><b>Frameworks:</b> Node.js, Express.js</li>
+                            <li><b>Technologies:</b> GIT, Docker</li>
+                            <li><b>Software:</b> Visual Studio Code, Figma</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="section">
+                    <h2 class="section-title">Code Example</h2>
+                    <div class="section-content">
+                        <pre>
+                            <code>
+// Checking for closed parentheses in a sequence
+function check(str, bracketsConfig) {
+  let flag = true;
+    while(flag){
+        flag=false;
+      for(config of bracketsConfig){
+          let brackets = config[0]+config[1];
+          while(str.includes(brackets)){
+                  str = str.slice(0,str.indexOf(brackets)) + str.slice(str.indexOf(brackets)+brackets.length);
+                  flag=true;
+          }
+      }
+  }
+  if(str)
+      return false;
+  else
+      return true;
+}
+                            </code>
+                        </pre>
+                    </div>
+                </section>
+                <section class="section">
+                    <h2 class="section-title">Education</h2>
+                    <div class="section-content">
+                        <a href="https://learn.javascript.ru" >JavaScript Tutorial</a>
+                    </div>
+                </section>
+                <section class="section">
+                    <h2 class="section-title">Education</h2>
+                    <div class="section-content">
+                        <p class="section-text">
+                            <b>Belarusian State University (2019 - 2023)</b><br>
+                            Mechanics and Mathematics faculty, Bachelor
+                        </p>
+                    </div>
+                </section>
+                <section class="section">
+                    <h2 class="section-title">English</h2>
+                    <p class="section-content">
+                        <b>Level:</b> A2+
+                    </p>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>
