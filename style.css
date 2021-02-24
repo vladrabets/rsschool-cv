@@ -1,1 +1,99 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
 
+body{
+    background-color: #559caa;
+    font-family: 'Varela Round', sans-serif;;
+}
+
+#container{
+    background-color: #ffffff;
+    color: #383935;
+    width: 65%;
+    box-shadow: 0 0 40px 1px;
+    margin: 0px auto;
+    padding: 30px;
+}
+
+.name{
+    font-size: 3em;
+    padding-bottom: 30px;
+}
+
+.info{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20%;
+}
+
+.info-photo{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+summary:focus {
+    outline: none;
+  }
+
+.summary{
+    font-size: 18pt;
+}
+
+.summary-content{
+    margin: 3% 3% 0px 6%;
+    font-size: 14pt;
+}
+
+.summary-content > p{
+    margin-top: 4px;
+}
+
+.section-title{
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.section-title::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #559caa;
+}
+
+.section-content{
+    padding-left: 20px;
+    font-size: 14pt;
+}
+
+.section-list > li{
+    margin: 4px 0px 0px 19px;
+}
+
+pre {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-left: 5px solid #559caa;
+    color: #666;
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    max-width: 100%;
+    overflow: auto;
+    padding-left: 2%;
+    margin-left: 0%;
+    display: block;
+    word-wrap: break-word;
+}
+
+code{
+    font-size: 11pt;
+}
+
+a{
+    color: #383935; 
+}
